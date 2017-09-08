@@ -15,7 +15,7 @@ RSpec.describe("Grams#anagram") do
   end
   it("will check to see if 'Kayak' (a palindrome with a capitalized letter) is an anagram and a palidrome of itself") do
     kayak = Grams.new("Kayak")
-    expect(kayak.anagram("Kayak")).to eq("These words are palindromes and anagrams!")
+    expect(kayak.anagram("kayak")).to eq("These words are palindromes and anagrams!")
   end
   it("will check to see if 'No lemons, no melon' (a palindrome phrase with punctuation) is an anagram and a palidrome of itself") do
     lemons = Grams.new("No lemons, no melon")
