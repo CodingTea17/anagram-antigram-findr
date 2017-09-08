@@ -19,6 +19,8 @@ class Grams
         else
           "These words are anagrams!"
         end
+      elsif (@word & candidate).length == 0
+        "These words are antigrams."
       else
         "These words are not anagrams :("
       end
