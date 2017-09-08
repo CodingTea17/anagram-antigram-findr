@@ -17,4 +17,8 @@ RSpec.describe("Grams#anagram") do
     ruby = Grams.new("Kayak")
     expect(ruby.anagram("Kayak")).to eq("These words are palindromes and anagrams!")
   end
+  it("will check to see if 'No lemons, no melon' is an anagram and a palidrome of 'Kayak'") do
+    ruby = Grams.new("No lemons, no melon")
+    expect(ruby.anagram("No lemons, no melon")).to eq("These words are palindromes and anagrams!")
+  end
 end
